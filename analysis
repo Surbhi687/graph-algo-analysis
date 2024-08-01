@@ -1,0 +1,27 @@
+The project consists of several directories and files:
+
+src: contains the main implementation of the algorithm
+include: header files for various components
+lib/fibheap: contains the implementation of a Fibonacci Heap used for the priority queue in Prim's algorithm
+data: contains output data from the algorithm.
+CMakeLists.txt: The build configuration file.
+
+key files and functions
+1. CMakeLists.txt:  this file configures the build system using CMake.
+2. src/main.cpp: the main program that executes the Prim's MST algorithm.
+3. include/graph.h: header file defines the graph class, for creating a graph, adding edges, and other utility functions.
+4. include/prim.h: header file defines the Prim class, which implements Prim's algorithm.
+5. lib/fibheap: this directory contains the implementation of the Fibonacci Heap, which is used as the priority queue in Prim's algorithm
+
+FUNCTION DOCUMENTATION
+1. Graph::randomGraph(int nodes, int edges) : Generates a random graph with the specified number of nodes and edges
+
+2. Graph::addEdge(int u, int v, int weight) :  adds an edge between nodes u and v with the specified weight
+
+3. Prim::run(const Graph &graph): runs Prim's algorithm on the given graph and returns the resulting minimum spanning tree (MST)
+
+4. fibHeap::insert(int key): inserts a new key into the fibonacci heap.
+
+5. FibHeap::extractMin(): extracts and returns the minimum key from the heap
+
+6. FibHeap::decreaseKey(FibHeapNode node, int newKey)* : decreases the key of a given node to a new value
